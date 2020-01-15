@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB introduction</title>
+    <style media="screen">
+      .box1{
+        background : black;
+        border : 2px solid black;
+        border radius : 10px;
+        width : 200px;
+        height : 50px;
+        text-align : center;
+        color : white;
+        font-size : 20px;
+        left : 50%;
+      }
+    </style>
+    <script type="text/javascript">
+      function NightDayHandler(self){
+        var target = document.querySelector('body');
+        if(self.value === 'Night'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          self.value = 'Day';
+        }
+        else{
+          target.style.background = 'white';
+          target.style.color = 'black';
+          self.value = 'Night';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="WEB.html" class="box1">WEB</a>
+    <input id = "night_day" type="button" name="" value="Night" onclick="
+    NightDayHandler(this);
+    ">
+    <ol>
+      <li><a href="html.html">html</a></li>
+      <li><a href="CSS.html">CSS</a></li>
+      <li><a href="JavaScript.html">JavaScript</a></li>
+    </ol>
+    <img src="img/img1.png" alt="" width="30%">
+    <input type="file" name="" value="">
+    <p>
+      웹의 다른 뜻은 다음과 같다. 웹(web)은 기본적으로 거미줄을 뜻한다. 월드 와이드 웹(World Wide Web)의 약자 월드와이드웹: 세계 최초의 웹 브라우저 웹 2.0, 웹 3.0 웹사이트(website) 웹(WEB)은 도널드 커누스가 제안한 프로그래밍 시스템이다. 웹(Web)은 그놈 데스크톱의 웹 브라우저이다. 월간 웹은 1998년 창간된 월간지이다.
+    </p>
+  </body>
+</html>
